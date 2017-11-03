@@ -1,0 +1,51 @@
+/* CSS variables; these can replace 'red' , 'blue', and hex codes; */
+
+/**************************************************************/
+
+$orange: #ffa600;
+$green: #c1d72e;
+$blue: #82d2e5;
+$grey:#f3f3f3;
+$white: #fff;
+$base-color:$green;
+
+/**************************************************************/
+
+@mixin fade {
+  -moz-transition: all 1s ease-in;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+}
+
+@mixin opacity {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  @include fade;
+}
+
+
+#blank {
+  height: 100%;
+  text-align: center;
+  font-size: 48px;
+
+
+
+  &:hover {
+    @include fade;
+    @include opacity;
+  }
+}
+
+align-content-center {
+  color: $blue;
+}
+
+
+.gallow {
+  margin-top: 100px;
+
+  height: 400px;
+  width: 900px;
+  background: url('../hangmanSprite.jpg') no-repeat 0 0 transparent;
+}

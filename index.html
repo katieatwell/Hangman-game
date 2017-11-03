@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>Hangman</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/shop-item.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Hangman</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+                <span class="sr-only">(current)</span>
+              </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-lg-3">
+        <h1 class="my-4">Press any key to begin!</h1>
+      </div>
+      <!-- /.col-lg-3 -->
+
+      <div class="col-lg-9">
+
+        <div class="card mt-4">
+          <div class="gallow"></div>
+          <div class="card-body">
+            <div id="lose" class="alert alert-warning">
+              <h2>Oh no!</h2>
+              <p>Want to try again? Press the start over button!</p>
+            </div>
+            <div id="hiddenCongrats" class="alert alert-success">
+              <h2 class="alert-heading">You Win!</h2><br>Press "Start Over" to play again!</div>
+            <div id="instruct">
+              <h3 class="card-title">Instructions</h3>
+              <p class="card-text">Use your keyboard to enter your letter guesses.You will have seven tries to guess the correct word.Good luck!</p>
+            </div>
+          </div>
+        </div>
+        <!-- /.card -->
+
+        <div class="card card-outline-secondary my-4">
+          <div class="card-header">
+            Correct Guesses:
+
+            <div id="buttons"> </div>
+          </div>
+
+          <div class="card-body">
+
+            <div id="blank"></div>
+            <!--end blank-->
+
+            <hr>
+            <div id="wrong"></div>
+            <!--end wrong-->
+
+            <p></p>
+            <a href="#" id="startOver" class="btn btn-success">Start Over</a>
+          </div>
+
+        </div>
+        <!-- /.card -->
+
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p id="copyright" class="m-0 text-center text-white">Copyright &copy; HANGMAN 2017</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="game.js"></script>
+</body>
+
+</html>
