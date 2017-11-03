@@ -115,6 +115,7 @@ $("#startOver").click(function() {
     direct.show();
     winMessage.hide();
     loseMessage.hide();
+    counter = 0;
     gallow.css("backgroundPosition", "-" + "0px 0px");
     compBlanks();
 });
